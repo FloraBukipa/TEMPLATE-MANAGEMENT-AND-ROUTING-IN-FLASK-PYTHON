@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+.wrapper{
+  width: 900px;
+  min-height: 600px;
+  margin: 0 auto;
+  border:1px dotted #ccc;
+  padding: 20px;
+}
+
+#menuHolder{
+  width:100%;
+  height: 50px;
+  display: flex;
+  background-color: blueviolet;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.menu a{
+  color:white;
+  text-decoration: none;
+}
+.menu{
+  width: 100px;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#menuHolder .icon{
+  width: 80px;
+  color:white;
+}
+#menuHolder .icon:hover{
+color:gold;
+cursor: pointer;
+}
+#menuHolder .active{
+  background-color: gold;
+  color: red;
+}
+#menuHolder .active:hover{
+  background-color: black;
+  color: gold;
+}
+.menu:hover{
+  background-color: black;
+  color: gold;
+}
+#logoHolder{
+  width: 100px;
+  height: 50px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
+}
+#menuHolder img{
+  width: 100%;
+  height:100%;
+}
+
+#cardHolder{
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.ProductCard{
+  width: 200px;
+  height: 250px;
+  border:1px solid red;
+  margin: 10px;
+}
+
+.ProductCard{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ProductCard .ProductTitle{
+  font-weight: bold;
+}
+
+.ProductCard .ProductImage{
+  width:100%;
+  height: 120px;
+  background-color: aqua;
+}
+
+.ProductCard .ProductImage img{
+  width:100%;
+  height: 100%;
+
+}

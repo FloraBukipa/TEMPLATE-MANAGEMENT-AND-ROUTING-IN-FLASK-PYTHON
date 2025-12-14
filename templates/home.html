@@ -1,0 +1,27 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to the Home Page!</h1>
+    <p>This is the main content.</p>
+
+      <h1>{{ message }}</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>USER DETAILS</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in user.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}
